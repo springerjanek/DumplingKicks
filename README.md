@@ -1,7 +1,7 @@
 # DumplingKicks Responsive Static App
 
 Select a shoe you want to purchase and contact with the seller :)
-LIVE: dumplingkicks.pl
+[LIVE SITE](https://dumplingkicks.pl)
 
 ---
 
