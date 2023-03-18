@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "JORDAN 1 MID ICE BLUE GS",
+    "sizes_and_prices": [
+      { "size": "37.5", "price": "700" },
+      { "size": "38", "price": "750" }
+    ],
+    "sku": "555112-401",
+    "thumbnail": "https://i.imgur.com/Hdn3d8U.png"
+  },
+  {
+    "id": 2,
+    "name": "JORDAN 4 SEAFOAM (W)",
+    "sizes_and_prices": [
+      { "size": "40.5", "price": "1450" },
+      { "size": "41", "price": "1450" }
+    ],
+    "sku": "AQ9129-103",
+    "thumbnail": "https://i.imgur.com/NGOK4du.png"
+  }
+]
