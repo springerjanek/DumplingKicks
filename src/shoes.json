@@ -7,16 +7,37 @@
       { "size": "38", "price": "750" }
     ],
     "sku": "555112-401",
-    "thumbnail": "https://i.imgur.com/Hdn3d8U.png"
+    "thumbnail": "https://i.imgur.com/Hdn3d8U.png",
+    "brand": "JORDAN"
   },
   {
     "id": 2,
+    "name": "JORDAN 1 MID UNIVERSITY BLUE GREY",
+    "sizes_and_prices": [{ "size": "44.5", "price": "800" }],
+    "sku": "DX9276-100",
+    "thumbnail": "https://i.imgur.com/FjU68Ll.png",
+    "brand": "JORDAN"
+  },
+  {
+    "id": 3,
+    "name": "JORDAN 1 MID ALTERNATE BRED GS",
+    "sizes_and_prices": [
+      { "size": "36.5", "price": "600" },
+      { "size": "40", "price": "580" }
+    ],
+    "sku": "554725-079",
+    "thumbnail": "https://i.imgur.com/8rJgomQ.png",
+    "brand": "JORDAN"
+  },
+  {
+    "id": 4,
     "name": "JORDAN 4 SEAFOAM (W)",
     "sizes_and_prices": [
       { "size": "40.5", "price": "1450" },
       { "size": "41", "price": "1450" }
     ],
     "sku": "AQ9129-103",
-    "thumbnail": "https://i.imgur.com/NGOK4du.png"
+    "thumbnail": "https://i.imgur.com/NGOK4du.png",
+    "brand": "JORDAN"
   }
 ]
