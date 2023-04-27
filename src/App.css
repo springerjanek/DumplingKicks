@@ -11,18 +11,12 @@ body,
   overflow-x: hidden;
 }
 
-.landing-container {
-  text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.ig {
+  display: flex;
+  justify-content: center;
 }
 
-.landing-container img {
-  width: 550px;
-  height: 400px;
-}
-
-.landing-container img:hover {
+img:hover {
   -webkit-filter: brightness(110%);
 }
 
