@@ -1,6 +1,6 @@
-# DumplingKicks Responsive Static App
+# DumplingKicks Shoe Store
 
-Select a shoe you want to purchase and contact with the seller :)
+Select a shoe you want to purchase and contact with the store :)
 [LIVE SITE IN PROGRESS](https://dumplingkicks.pl)
 
 ---
@@ -12,4 +12,3 @@ Select a shoe you want to purchase and contact with the seller :)
 
 <img align="left" alt="React" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />   
 <img align="left" alt="TypeScript" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" />
-<img align="left" alt="ReactQuery" width="30px" style="padding-right:10px;" src="https://vectorwiki.com/images/Skj0l__react-query-icon.svg" />
