@@ -1,5 +1,6 @@
 ---
 import "../styles/styles.scss";
+import { Navbar } from "../components/Navbar/Navbar";
 ---
 
 <!DOCTYPE html>
@@ -12,6 +13,7 @@ import "../styles/styles.scss";
     <title>Dumpling Kicks</title>
   </head>
   <body>
+    <Navbar client:load />
     <slot />
   </body>
 </html>
