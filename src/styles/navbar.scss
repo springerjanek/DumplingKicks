@@ -1,0 +1,52 @@
+.nav {
+  margin-top: 15px;
+  margin-left: 15px;
+  display: flex;
+  justify-content: space-between;
+  a {
+    font-size: 30px;
+  }
+}
+
+.nav__right {
+  display: flex;
+  height: fit-content;
+  margin-right: 15px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.mobile__menu {
+  display: none;
+}
+
+.search__product {
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav__left {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    margin-left: 10px;
+  }
+  .mobile__menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+    background-color: #c2b59b;
+    a {
+      margin-left: 15px;
+    }
+  }
+  .nav__right {
+    margin-left: auto;
+  }
+}
