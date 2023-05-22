@@ -8,6 +8,11 @@ export const Navbar = () => {
   const [showInput, setShowInput] = useState(false);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
+  const handleInput = () => {
+    setShowInput(!showInput);
+    setInput("");
+  };
+
   return (
     <>
       <div className="nav">
@@ -32,7 +37,7 @@ export const Navbar = () => {
             type="text"
             placeholder="JORDAN 1"
             value={input}
-            onChange={(e) => setInput(e.target.value)}
+            onChange={(e) => setInput(e.target.value.trim())}
           ></input>
         </div>
 
@@ -46,7 +51,7 @@ export const Navbar = () => {
               margin: "7px 10px",
               cursor: "pointer",
             }}
-            onClick={() => setShowInput(!showInput)}
+            onClick={handleInput}
           />
           <a href="/contact" className={`${showInput ? "hide-contact" : ""} `}>
             KONTAKT
