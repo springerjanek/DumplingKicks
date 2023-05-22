@@ -1,11 +1,14 @@
 .nav {
   margin-top: 15px;
-  margin-left: 15px;
   display: flex;
   justify-content: space-between;
   a {
     font-size: 30px;
   }
+}
+
+.nav__left {
+  margin-left: 15px;
 }
 
 .nav__right {
@@ -14,11 +17,7 @@
   margin-right: 15px;
 }
 
-.hamburger {
-  display: none;
-}
-
-.mobile__menu {
+.hamburger-icon {
   display: none;
 }
 
@@ -30,20 +29,25 @@
   .nav__left {
     display: none;
   }
-  .hamburger {
+
+  .hamburger-icon {
     display: block;
-    margin-left: 10px;
+    padding-top: 6px;
+    padding-left: 10px;
+    z-index: 1;
   }
-  .mobile__menu {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
+  .hamburger-menu {
+    position: fixed;
+    padding-top: 50px;
     height: 100%;
     width: 100%;
-    margin-top: 50px;
     background-color: #c2b59b;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
     a {
-      margin-left: 15px;
+      padding: 5px;
     }
   }
   .nav__right {
