@@ -34,15 +34,46 @@
   }
 }
 
-.search__product {
+.input-search__products {
+  position: fixed;
+  height: 90%;
+  width: 100%;
+  background: #c2b59b;
+  overflow-y: scroll;
+  padding-bottom: 90px;
+}
+
+.input-search__product {
   display: flex;
+  align-items: center;
+  margin-left: 10px;
+  img {
+    width: 25%;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+
+.hide-contact {
+  display: none;
 }
 
 @media only screen and (max-width: 768px) {
+  .input-search__product {
+    img {
+      width: 50%;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
   .nav__left {
     display: none;
   }
-
   .hamburger-icon {
     display: block;
     padding-top: 6px;
@@ -71,7 +102,9 @@
       width: 85%;
     }
   }
-  .hide-contact {
-    display: none;
+  .input-search__product {
+    p {
+      font-size: 22px;
+    }
   }
 }
