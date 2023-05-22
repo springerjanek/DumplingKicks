@@ -8,7 +8,7 @@ export const Products = () => {
       {shoes.map((shoe) => {
         const { id, name, thumbnail } = shoe;
         return (
-          <div key={id}>
+          <div className="product" key={id}>
             <img src={thumbnail} alt="Shoe" />
             <h1>
               <a href={`/product/${name.replace(/\s/g, "-").toLowerCase()}`}>
