@@ -16,6 +16,7 @@ export const Navbar = () => {
           <a href="/brand/nike-dunk"> NIKE DUNK</a>
           <a href="/brand/new-balance"> NEW BALANCE</a>
         </div>
+
         <div className="hamburger-icon">
           <Bars3Icon
             style={{
@@ -24,6 +25,15 @@ export const Navbar = () => {
             }}
             onClick={() => setShowMobileMenu(!showMobileMenu)}
           />
+        </div>
+
+        <div className={`${showInput ? "input-search" : "hidden"} `}>
+          <input
+            type="text"
+            placeholder="JORDAN 1"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+          ></input>
         </div>
 
         {showMobileMenu && <MobileMenu />}
@@ -38,18 +48,12 @@ export const Navbar = () => {
             }}
             onClick={() => setShowInput(!showInput)}
           />
-          <a href="/contact">KONTAKT</a>
+          <a href="/contact" className={`${showInput ? "hide-contact" : ""} `}>
+            KONTAKT
+          </a>
         </div>
       </div>
 
-      <div className={`${showInput ? "" : "hidden"} `}>
-        <input
-          type="text"
-          placeholder="JORDAN 1"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-        ></input>
-      </div>
       <NavbarProducts input={input} />
     </>
   );

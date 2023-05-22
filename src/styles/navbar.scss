@@ -1,7 +1,8 @@
 .nav {
   margin-top: 15px;
   display: flex;
-  justify-content: space-between;
+
+  // justify-content: space-between;
   a {
     font-size: 30px;
   }
@@ -13,12 +14,24 @@
 
 .nav__right {
   display: flex;
-  height: fit-content;
+  margin-left: auto;
   margin-right: 15px;
 }
 
 .hamburger-icon {
   display: none;
+}
+
+.input-search {
+  text-align: center;
+  flex: 1;
+  input {
+    font-size: 15px;
+    padding: 12px;
+    border: black;
+    border-radius: 5px;
+    width: 95%;
+  }
 }
 
 .search__product {
@@ -52,5 +65,13 @@
   }
   .nav__right {
     margin-left: auto;
+  }
+  .input-search {
+    input {
+      width: 85%;
+    }
+  }
+  .hide-contact {
+    display: none;
   }
 }
