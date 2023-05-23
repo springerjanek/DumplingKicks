@@ -13,6 +13,11 @@ export const Navbar = () => {
     setInput("");
   };
 
+  const handleHamburgerIcon = () => {
+    setShowMobileMenu(!showMobileMenu);
+    setInput("");
+  };
+
   return (
     <>
       <div className="nav">
@@ -28,7 +33,7 @@ export const Navbar = () => {
               width: "25px",
               height: "25px",
             }}
-            onClick={() => setShowMobileMenu(!showMobileMenu)}
+            onClick={handleHamburgerIcon}
           />
         </div>
 
