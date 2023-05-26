@@ -7,16 +7,24 @@ export const NavbarProducts = ({ input }: { input: string }) => {
   return (
     <>
       {matchingProducts && input.length > 0 ? (
-        <div className="input-search__products">
+        <ul className="input-searcch__products">
           {matchingProducts.map((product) => {
             return (
-              <div key={product.id} className="input-search__product">
+              <li
+                key={product.id}
+                className="input-search__product"
+                onClick={() =>
+                  (window.location.href = `/product/${product.name
+                    .replace(/\s/g, "-")
+                    .toLowerCase()}`)
+                }
+              >
                 <img src={product.thumbnail} />
                 <p>{product.name}</p>
-              </div>
+              </li>
             );
           })}
-        </div>
+        </ul>
       ) : (
         ""
       )}
