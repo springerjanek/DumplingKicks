@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { MagnifyingGlassIcon, Bars3Icon } from "@heroicons/react/24/solid";
 import { MobileMenu } from "./mobile/MobileMenu";
 import { NavbarProducts } from "./NavbarProducts";
+import { MagnifyingGlassIcon, Bars3Icon } from "@heroicons/react/24/solid";
 
 export const Navbar = () => {
   const [input, setInput] = useState("");
@@ -63,7 +63,6 @@ export const Navbar = () => {
           </a>
         </div>
       </div>
-
       <NavbarProducts input={input} />
     </>
   );
