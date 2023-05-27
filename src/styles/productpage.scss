@@ -1,0 +1,75 @@
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 40%;
+  }
+  h1 {
+    margin: 0;
+  }
+}
+
+select {
+  appearance: none;
+  margin-top: 10px;
+  padding: 10px 16px 10px 16px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 17px;
+
+  text-align-last: center;
+  &:focus {
+    border: 1px solid #999;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+    outline: none;
+  }
+}
+
+.product-info__btn {
+  margin-top: 25px;
+  padding: 15px;
+  padding-inline: 25px;
+  font-size: 20px;
+  font-family: "Outfit", sans-serif;
+  font-weight: bold;
+  border: white;
+  border-radius: 5%;
+  background: linear-gradient(to right, #e2dcc0 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+  &:hover {
+    background-position: left bottom;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .product-info {
+    img {
+      width: 50%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .product-info {
+    img {
+      width: 70%;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .product-info {
+    img {
+      width: 80%;
+    }
+    h1 {
+      font-weight: 200;
+      font-size: 26px;
+    }
+  }
+}

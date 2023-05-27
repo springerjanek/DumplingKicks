@@ -1,0 +1,43 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import shoes from "../../shoes.json";
+import type { Product } from "../../components/Navbar/utils/useSearch";
+import "../../styles/productpage.scss";
+
+export async function getStaticPaths() {
+  return shoes.map((shoe) => ({
+    params: {
+      name: shoe.name.replace(/\s/g, "-").toLowerCase(),
+    },
+    props: {
+      shoe,
+    },
+  }));
+}
+
+const shoe: Product = Astro.props.shoe;
+---
+
+<Layout>
+  <div class="product-info">
+    <img src={shoe.thumbnail} />
+    <h1>{shoe.name}</h1>
+    <p>{shoe.sku}</p>
+    <select>
+      {
+        shoe.sizes_and_prices.map((size_and_price) => {
+          return (
+            <option>
+              {size_and_price.size} - {size_and_price.price}zł
+            </option>
+          );
+        })
+      }
+    </select>
+    <button
+      class="product-info__btn"
+      onclick="window.location.href='https://www.instagram.com/dumpling_kicks' "
+      >KUP TERAZ</button
+    >
+  </div>
+</Layout>
