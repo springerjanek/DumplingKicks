@@ -28,11 +28,16 @@ const shoe: Product = Astro.props.shoe;
         shoe.sizes_and_prices.map((size_and_price) => {
           return (
             <option>
-              {size_and_price.size} - {size_and_price.price}
+              {size_and_price.size} - {size_and_price.price}zł
             </option>
           );
         })
       }
     </select>
+    <button
+      class="product-info__btn"
+      onclick="window.location.href='https://www.instagram.com/dumpling_kicks' "
+      >KUP TERAZ</button
+    >
   </div>
 </Layout>
