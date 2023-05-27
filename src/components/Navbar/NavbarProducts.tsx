@@ -7,7 +7,7 @@ export const NavbarProducts = ({ input }: { input: string }) => {
   return (
     <>
       {matchingProducts && input.length > 0 ? (
-        <ul className="input-searcch__products">
+        <ul className="input-search__products">
           {matchingProducts.map((product) => {
             return (
               <li
