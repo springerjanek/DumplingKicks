@@ -11,6 +11,7 @@
 .contact-form {
   display: flex;
   flex-direction: column;
+  width: 350px;
   gap: 10px;
   h1 {
     padding-bottom: 5px;
@@ -104,6 +105,9 @@
 }
 
 @media only screen and (max-width: 350px) {
+  .contact-form {
+    align-items: center;
+  }
   #contact-form__email {
     width: 250px;
   }

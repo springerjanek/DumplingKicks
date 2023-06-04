@@ -1,8 +1,24 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Products } from "../components/Products";
+import shoes from "../shoes.json";
 ---
 
 <Layout>
-  <Products />
+  <main class="products">
+    {
+      shoes.map((shoe) => {
+        const { id, name, thumbnail } = shoe;
+        return (
+          <div class="product">
+            <img src={thumbnail} alt="Shoe" />
+            <h1>
+              <a href={`/product/${name.replace(/\s/g, "-").toLowerCase()}`}>
+                {name}
+              </a>
+            </h1>
+          </div>
+        );
+      })
+    }
+  </main>
 </Layout>

@@ -1,35 +1,37 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import * as Yup from "yup";
+import { contactSchema } from "../../schema/contact";
 
-type ContactForm = {
+export type FormData = {
   email: string;
   message: string;
 };
 
-const validationSchema = Yup.object({
-  email: Yup.string()
-    .required("Wypełnij adres e-mail")
-    .email("E-mail jest nieprawidłowy"),
-  message: Yup.string()
-    .min(20, "Wiadmość musi być dłuższa niż 20 znaków")
-    .required("Wypełnij wiadomość"),
-}).required();
-
-export const ContactForm = () => {
+export const ContactForm = ({
+  sendEmail,
+  resetForm,
+}: {
+  sendEmail: (FormData: FormData) => void;
+  resetForm: boolean;
+}) => {
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<ContactForm>({
-    resolver: yupResolver(validationSchema),
+    reset,
+  } = useForm<FormData>({
+    resolver: yupResolver(contactSchema),
   });
 
-  const onSubmit = handleSubmit((data) => console.log(data));
+  useEffect(() => {
+    if (resetForm) {
+      reset({ message: "", email: "" });
+    }
+  }, [resetForm]);
 
   return (
-    <form className="contact-form" onSubmit={onSubmit}>
+    <form className="contact-form" onSubmit={handleSubmit(sendEmail)}>
       <h1>Napisz do nas!</h1>
       <label htmlFor="email">E-mail</label>
       <p className="contact-form__error">{errors.email?.message}</p>
