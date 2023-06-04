@@ -1,5 +1,5 @@
 ---
-import { ContactForm } from "../components/Forms/ContactForm";
+import { ContactPage } from "../components/ContactPage";
 import instagram from "../assets/instagram.svg";
 import mail from "../assets/mail.svg";
 import "../styles/styles.scss";
@@ -17,7 +17,7 @@ import "../styles/contact.scss";
   </head>
   <body>
     <div class="container">
-      <ContactForm client:load />
+      <ContactPage client:load />
       <div class="info">
         <div class="info__instagram">
           <img src={instagram} />
