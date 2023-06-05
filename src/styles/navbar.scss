@@ -1,13 +1,17 @@
 .nav {
   margin-top: 15px;
   display: flex;
+  align-items: center;
   a {
     font-size: 30px;
   }
 }
 
 .nav__left {
+  display: flex;
+  gap: 5px;
   margin-left: 15px;
+  align-items: center;
 }
 
 .nav__right {
