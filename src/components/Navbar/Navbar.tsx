@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { MobileMenu } from "./mobile/MobileMenu";
 import { NavbarProducts } from "./NavbarProducts";
 import { MagnifyingGlassIcon, Bars3Icon } from "@heroicons/react/24/solid";
+import dumplingkicks from "../../assets/dumplingkicks.png";
 
 export const Navbar = () => {
   const [input, setInput] = useState("");
@@ -22,6 +23,15 @@ export const Navbar = () => {
     <>
       <div className="nav">
         <div className="nav__left">
+          <a href="/">
+            <img
+              src={dumplingkicks}
+              style={{
+                width: "65px",
+                height: "65px",
+              }}
+            />
+          </a>
           <a href="/brand/jordan">AIR JORDAN</a>
           <a href="/brand/nike-dunk"> NIKE DUNK</a>
           <a href="/brand/new-balance"> NEW BALANCE</a>
