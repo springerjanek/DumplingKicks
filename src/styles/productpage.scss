@@ -18,8 +18,8 @@ select {
   border: 1px solid #ddd;
   border-radius: 3px;
   font-size: 17px;
-
   text-align-last: center;
+  color: black;
   &:focus {
     border: 1px solid #999;
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
@@ -34,6 +34,7 @@ select {
   font-size: 20px;
   font-family: "Outfit", sans-serif;
   font-weight: bold;
+  color: black;
   border: white;
   border-radius: 5%;
   background: linear-gradient(to right, #e2dcc0 50%, white 50%);
