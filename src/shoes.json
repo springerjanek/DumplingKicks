@@ -3,8 +3,14 @@
     "id": 1,
     "name": "JORDAN 1 MID ICE BLUE GS",
     "sizes_and_prices": [
-      { "size": "37.5", "price": "700" },
-      { "size": "38", "price": "750" }
+      { "size": "35.5", "price": "679" },
+      { "size": "36", "price": "699" },
+      { "size": "36.5", "price": "699" },
+      { "size": "37.5", "price": "699" },
+      { "size": "38", "price": "699" },
+      { "size": "38.5", "price": "699" },
+      { "size": "39", "price": "749" },
+      { "size": "40", "price": "749" }
     ],
     "sku": "555112-401",
     "thumbnail": "https://i.imgur.com/Hdn3d8U.png",
@@ -13,7 +19,19 @@
   {
     "id": 2,
     "name": "JORDAN 1 MID UNIVERSITY",
-    "sizes_and_prices": [{ "size": "44.5", "price": "800" }],
+    "sizes_and_prices": [
+      { "size": "40", "price": "849" },
+      { "size": "40.5", "price": "849" },
+      { "size": "41", "price": "849" },
+      { "size": "42", "price": "849" },
+      { "size": "42.5", "price": "849" },
+      { "size": "43", "price": "849" },
+      { "size": "44", "price": "849" },
+      { "size": "44.5", "price": "849" },
+      { "size": "45", "price": "849" },
+      { "size": "45.5", "price": "849" },
+      { "size": "46", "price": "849" }
+    ],
     "sku": "DX9276-100",
     "thumbnail": "https://i.imgur.com/FjU68Ll.png",
     "brand": "JORDAN"
@@ -22,8 +40,16 @@
     "id": 3,
     "name": "JORDAN 1 MID STEALTH (W)",
     "sizes_and_prices": [
-      { "size": "36.5", "price": "600" },
-      { "size": "40", "price": "580" }
+      { "size": "36", "price": "799" },
+      { "size": "36.5", "price": "799" },
+      { "size": "37.5", "price": "799" },
+      { "size": "38", "price": "799" },
+      { "size": "38.5", "price": "799" },
+      { "size": "39", "price": "799" },
+      { "size": "40", "price": "799" },
+      { "size": "40.5", "price": "799" },
+      { "size": "41", "price": "799" },
+      { "size": "42", "price": "799" }
     ],
     "sku": "554725-079",
     "thumbnail": "https://i.imgur.com/8rJgomQ.png",
@@ -33,8 +59,23 @@
     "id": 4,
     "name": "JORDAN 4 SEAFOAM (W)",
     "sizes_and_prices": [
-      { "size": "40.5", "price": "1450" },
-      { "size": "41", "price": "1450" }
+      { "size": "36", "price": "1549" },
+      { "size": "36.5", "price": "1549" },
+      { "size": "37.5", "price": "1549" },
+      { "size": "38", "price": "1549" },
+      { "size": "38.5", "price": "1549" },
+      { "size": "39", "price": "1549" },
+      { "size": "40", "price": "1549" },
+      { "size": "40.5", "price": "1499" },
+      { "size": "41", "price": "1499" },
+      { "size": "42", "price": "1499" },
+      { "size": "42.5", "price": "1499" },
+      { "size": "43", "price": "1499" },
+      { "size": "44", "price": "1499" },
+      { "size": "44.5", "price": "1499" },
+      { "size": "45", "price": "1499" },
+      { "size": "45.5", "price": "1499" },
+      { "size": "46", "price": "1499" }
     ],
     "sku": "AQ9129-103",
     "thumbnail": "https://i.imgur.com/NGOK4du.png",
