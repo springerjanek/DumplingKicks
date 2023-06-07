@@ -80,5 +80,37 @@
     "sku": "AQ9129-103",
     "thumbnail": "https://i.imgur.com/NGOK4du.png",
     "brand": "JORDAN"
+  },
+  {
+    "id": 5,
+    "name": "NIKE DUNK ACTIVE FUCHSIA",
+    "sizes_and_prices": [
+      { "size": "36", "price": "799" },
+      { "size": "36.5", "price": "799" },
+      { "size": "37.5", "price": "799" },
+      { "size": "38", "price": "799" },
+      { "size": "38.5", "price": "799" },
+      { "size": "39", "price": "799" },
+      { "size": "40", "price": "799" }
+    ],
+    "sku": "FJ0704-100",
+    "thumbnail": "https://i.imgur.com/4VbKqZt.png",
+    "brand": "NIKE-DUNK"
+  },
+  {
+    "id": 6,
+    "name": "NEW BALANCE 550 RAIN CLOUD",
+    "sizes_and_prices": [
+      { "size": "36", "price": "599" },
+      { "size": "36.5", "price": "599" },
+      { "size": "37.5", "price": "599" },
+      { "size": "38", "price": "599" },
+      { "size": "38.5", "price": "599" },
+      { "size": "39", "price": "599" },
+      { "size": "40", "price": "599" }
+    ],
+    "sku": "GSB550CA",
+    "thumbnail": "https://i.imgur.com/sXz8HfX.png",
+    "brand": "NEW-BALANCE"
   }
 ]
