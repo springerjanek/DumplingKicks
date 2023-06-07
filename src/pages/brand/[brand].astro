@@ -1,0 +1,49 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import shoes from "../../shoes.json";
+import "../../styles/products.scss";
+
+export async function getStaticPaths() {
+  let uniqueBrands: string[] = [];
+  let brands: string[] = [];
+  shoes.map((shoe) => {
+    brands.push(...brands, shoe.brand);
+    uniqueBrands = [...new Set(brands)];
+  });
+
+  return uniqueBrands.map((uniqueBrand) => ({
+    params: {
+      brand: uniqueBrand.toLowerCase(),
+    },
+    props: {
+      uniqueBrand,
+    },
+  }));
+}
+
+const brand = Astro.props.uniqueBrand;
+const brandsProducts = shoes.filter((shoe) => shoe.brand === brand);
+---
+
+<Layout>
+  <div class="products">
+    {
+      brandsProducts.map((brandProduct) => {
+        return (
+          <div class="product">
+            <img src={brandProduct.thumbnail} />
+            <h1>
+              <a
+                href={`/product/${brandProduct.name
+                  .replace(/\s/g, "-")
+                  .toLowerCase()}`}
+              >
+                {brandProduct.name}
+              </a>
+            </h1>
+          </div>
+        );
+      })
+    }
+  </div>
+</Layout>
