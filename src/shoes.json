@@ -112,5 +112,21 @@
     "sku": "GSB550CA",
     "thumbnail": "https://i.imgur.com/sXz8HfX.png",
     "brand": "NEW-BALANCE"
+  },
+  {
+    "id": 7,
+    "name": "NIKE DUNK PINK VELVET",
+    "sizes_and_prices": [
+      { "size": "36", "price": "639" },
+      { "size": "36.5", "price": "639" },
+      { "size": "37.5", "price": "639" },
+      { "size": "38", "price": "639" },
+      { "size": "38.5", "price": "639" },
+      { "size": "39", "price": "639" },
+      { "size": "40", "price": "639" }
+    ],
+    "sku": "DO6485-600",
+    "thumbnail": "https://i.imgur.com/VHYtuJn.png",
+    "brand": "NIKE-DUNK"
   }
 ]
