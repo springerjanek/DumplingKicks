@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   margin-top: 50px;
-  gap: 100px;
+  gap: 60px;
   p {
     margin: 0;
   }
@@ -92,6 +92,12 @@
   padding-top: 15px;
   img {
     width: 50px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .container {
+    gap: 25px;
   }
 }
 
