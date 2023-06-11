@@ -1,7 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import shoes from "../../shoes.json";
-import "../../styles/products.scss";
+import "../../styles/index.scss";
 
 export async function getStaticPaths() {
   let uniqueBrands: string[] = [];
@@ -32,15 +32,13 @@ const brandsProducts = shoes.filter((shoe) => shoe.brand === brand);
         return (
           <div class="product">
             <img src={brandProduct.thumbnail} />
-            <h1>
-              <a
-                href={`/product/${brandProduct.name
-                  .replace(/\s/g, "-")
-                  .toLowerCase()}`}
-              >
-                {brandProduct.name}
-              </a>
-            </h1>
+            <a
+              href={`/product/${brandProduct.name
+                .replace(/\s/g, "-")
+                .toLowerCase()}`}
+            >
+              {brandProduct.name}
+            </a>
           </div>
         );
       })

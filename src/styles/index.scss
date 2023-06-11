@@ -5,6 +5,7 @@
   font-weight: normal;
   a {
     display: flex;
+    width: max-content;
   }
 }
 
@@ -14,10 +15,6 @@
   align-items: center;
   padding-left: 10px;
   padding-right: 10px;
-}
-
-h1 {
-  width: max-content;
 }
 
 @media only screen and (min-width: 300px) {
