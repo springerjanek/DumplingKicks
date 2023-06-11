@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import shoes from "../shoes.json";
-import "../styles/products.scss";
+import "../styles/index.scss";
 ---
 
 <Layout>
@@ -12,11 +12,9 @@ import "../styles/products.scss";
         return (
           <div class="product">
             <img src={thumbnail} alt="Shoe" />
-            <h1>
-              <a href={`/product/${name.replace(/\s/g, "-").toLowerCase()}`}>
-                {name}
-              </a>
-            </h1>
+            <a href={`/product/${name.replace(/\s/g, "-").toLowerCase()}`}>
+              {name}
+            </a>
           </div>
         );
       })
